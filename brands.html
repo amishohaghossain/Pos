@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="hKiLGPcsYtZkcAdxJ3MI195WmbCf9WdZCvohvpL0">
+
+    <title>SOFTGHOR Digital POS Software | Brand List</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="icon css/all.min.css">
+     <link rel="stylesheet" href="icon css/fontawesome.min.css">
+    <link href="https://pos.softghor.com/dashboard/css/core.min.css" rel="stylesheet">
+    <link href="https://pos.softghor.com/dashboard/css/select2.min.css" rel="stylesheet">
+    <link href="https://pos.softghor.com/dashboard/css/app.min.css" rel="stylesheet">
+    <link href="https://pos.softghor.com/dashboard/css/style.min.css" rel="stylesheet">
+    <link href="https://pos.softghor.com/dashboard/css/toastr.css" rel="stylesheet">
+    <link href="https://pos.softghor.com/dashboard/css/custom.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://pos.softghor.com/dashboard/images/logo-light-lg.png">
+    <link rel="icon" href="https://pos.softghor.com/dashboard/images/logo-light-lg.png">
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-dots">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+    </div>
+
+
+    <!-- Sidebar -->
+    <!-- Sidebar -->
+    <aside class="sidebar sidebar-expand-lg sidebar-dark">
+        <header class="sidebar-header bg-dark">
+            
+            <span class="logo">
+      <a href="index.html">
+        <h3 class="text-white">Princebros</h3>
+      </a>
+    </span>
+            <span class="sidebar-toggle-fold"></span>
+        </header>
+
+        <nav class="sidebar-navigation">
+
+
+
+            <ul class="menu">
+                <li class="menu-item active">
+                    <a class="menu-link" href="index.html">
+                    <span><i class="fas fa-house-user"></i></span>
+                    <span class="title">Dashboard</span>
+                </a>
+                </li>
+
+                <li class="menu-category">Sale & Purchase</li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="create.html">
+                        <span><i class="fas fa-cart-plus"></i></span>
+                        <span class="title"> POS</span>
+                    </a>
+                </li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="pos.html">
+                        <span><i class="fas fa-shopping-bag"></i></span>
+                        <span class="title"> Sales</span>
+                    </a>
+                </li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="return.html">
+                        <span><i class="fas fa-backward"></i></span>
+                        <span class="title"> Returns</span>
+                    </a>
+                </li>
+
+
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-suitcase"></i></span>
+                        <span class="title">Purchase</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="purchase create.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Purchase</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item">
+                            <a class="menu-link" href="won purchase.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Purchases</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="stock.html">
+                        <span><i class="fas fa-university"></i></span>
+                        <span class="title"> Stock</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-folder"></i></span>
+                        <span class="title">Damages</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add damage.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Damage</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="damage list.html">
+                                <span class="dot"></span>
+                                <span class="title">Damages</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="menu-category">Product Information</li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-swatchbook"></i></span>
+                        <span class="title">Products</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add product.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Product</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="all product.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Products</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-folder"></i></span>
+                        <span class="title">Cateogries</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add category.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Cateogry</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="categories.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Cateogries</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-folder"></i></span>
+                        <span class="title">Brands</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add brand.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Brand</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="brands.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Brands</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="menu-category">Expenses & Payment</li>
+
+
+                <li class="menu-item">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-folder"></i></span>
+                        <span class="title">Expenses</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add expense.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Expense</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="expense.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Expenses</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="expense-category.html">
+                                <span class="dot"></span>
+                                <span class="title">Expense Category</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-file-invoice-dollar"></i></span>
+                        <span class="title">Payments</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add payment.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Payment</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="payment.html">
+                                <span class="dot"></span>
+                                <span class="title">Payments</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+
+                <li class="menu-category">Peoples</li>
+
+
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-folder"></i></span>
+                        <span class="title">Customers</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add customer.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Customer</span>
+                            </a>
+                        </li>
+                        <li class="menu-item ">
+                            <a class="menu-link" href="customer.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Customers</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-wheelchair"></i></span>
+                        <span class="title">Suppliers</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item">
+                            <a class="menu-link " href="add supplier.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Supplier</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item">
+                            <a class="menu-link " href="supplier.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Suppliers</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="menu-category">Reports</li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="today_report.html">
+                        <span><i class="far fa-clock"></i></span>
+                        <span class="title"> Today Report</span>
+                    </a>
+                </li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="current_month_report.html">
+                        <span><i class="fas fa-calendar-alt"></i></span>
+                        <span class="title"> Current Month Report</span>
+                    </a>
+                </li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="summery-report.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title"> Summary Report</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="daily_report.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title"> Daily Report</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="customer_due.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title">Due Customer Report</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="low_stock.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title">Low Stock Report</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="most_purchase.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title">Top Customer</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="purchase_report.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title">Purchase Report</span>
+                    </a>
+                </li>
+
+
+
+
+
+
+
+                <li class="menu-category">Setting & Customize</li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="pos-setting.html">
+                        <span><i class="fas fa-user-cog"></i></span>
+                        <span class="title"> Settings</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-cloud"></i></span>
+                        <span class="title"> Backup</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </aside>
+    <!-- END Sidebar -->
+    <!-- END Sidebar -->
+
+
+    <!-- Topbar -->
+    <!-- Topbar -->
+    <header class="topbar topbar-inverse gb-dark" id="topbar-colors">
+        <div class="topbar-left">
+            <span class="topbar-btn sidebar-toggler" style="color:white;"><i>☰</i></span>
+
+
+
+
+
+            <div class="dropdown d-none d-md-block">
+                <h3 style="color:white;text-align:center; font-weight:bold; display:inline-block;">SOFTGHOR Digital POS Software</h3>
+                <p style="color:white; margin-left:15px; font-size:1.2em;display:inline-block; display:inline-block;">For Support: 01786-878393 (10 AM - 06 PM)</p>
+
+            </div>
+
+
+            <di class="topbar-divider d-none d-md-block"></di>
+        </div>
+
+        <div class="topbar-right">
+            <a class="topbar-btn" href="#" data-toggle="test"><i class="ti-align-right"></i></a>
+
+            <div class="topbar-divider"></div>
+
+            <ul class="topbar-btns">
+                <li class="dropdown">
+                    <span class="topbar-btn" data-toggle="dropdown"><img class="avatar"
+            src="https://pos.softghor.com/dashboard/img/avatar/1.jpg" alt="avater"></span>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="https://pos.softghor.com/back/profile"><i class="ti-user"></i> Profile</a>
+
+                        <a class="dropdown-item" href="https://pos.softghor.com/back/pos-setting"><i class="ti-settings"></i> Settings</a>
+                        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+              class="ti-power-off"></i> Logout</a>
+
+                        <form method="POST" id="logout-form" style="display:none" action="https://pos.softghor.com/logout">
+                            <input type="hidden" name="_token" value="hKiLGPcsYtZkcAdxJ3MI195WmbCf9WdZCvohvpL0"> </form>
+                    </div>
+                </li>
+
+                <!-- Notifications -->
+
+                <!-- END Notifications -->
+
+                <!-- Messages -->
+
+                <!-- END Messages -->
+
+            </ul>
+
+            <div class="topbar-divider"></div>
+        </div>
+    </header>
+    <!-- END Topbar -->
+    <!-- END Topbar -->
+
+
+    <!-- Main container -->
+    <main class="main-container" id="app">
+        <header class="header bg-ui-general">
+            <div class="header-info">
+                <h1 class="header-title">
+                    <strong>Brands</strong>
+                </h1>
+            </div>
+
+            <div class="header-action">
+                <nav class="nav">
+                    <a class="nav-link active" href="https://pos.softghor.com/back/brand">
+        Brands
+      </a>
+
+                    <a class="nav-link" href="https://pos.softghor.com/back/brand/create">
+        <i class="fa fa-plus"></i>
+        Add Brand
+      </a>
+                </nav>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <h4 class="card-title"><strong>Brands</strong></h4>
+
+                        <div class="card-body card-body-soft">
+                            <div class="table-responsive table-bordered">
+                                <table class="table table-soft">
+                                    <thead>
+                                        <tr class="bg-primary">
+                                            <th>#</th>
+                                            <th>Brand</th>
+                                            <th>Description</th>
+                                            <th>Logo</th>
+                                            <th>Count Products</th>
+                                            <th>#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Brand 1</td>
+                                            <td></td>
+                                            <td>
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="80" alt="logo">
+
+                                            </td>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                    Manage
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/brand/8/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/brand/8">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>SHAMIM QUIRING CENTER</td>
+                                            <td></td>
+                                            <td>
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="80" alt="logo">
+
+                                            </td>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                    Manage
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/brand/7/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/brand/7">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>mobile</td>
+                                            <td>mobile</td>
+                                            <td>
+                                                <img src="https://pos.softghor.com/dashboard/images/brands/1635775604.jpeg" width="80" alt="logo">
+
+                                            </td>
+                                            <td>
+                                                0
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                    Manage
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/brand/6/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/brand/6">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Sony Brand</td>
+                                            <td>Sony Brand Description</td>
+                                            <td>
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="80" alt="logo">
+
+                                            </td>
+                                            <td>
+                                                4
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                    Manage
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/brand/5/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/brand/5">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>Apple Brand</td>
+                                            <td>Apple Brand Description</td>
+                                            <td>
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="80" alt="logo">
+
+                                            </td>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                    Manage
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/brand/1/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/brand/1">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>Microsoft Brand</td>
+                                            <td>Microsoft Brand Description</td>
+                                            <td>
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="80" alt="logo">
+
+                                            </td>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                    Manage
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/brand/2/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/brand/2">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>Nokia Brand</td>
+                                            <td>Nokia Brand Description</td>
+                                            <td>
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="80" alt="logo">
+
+                                            </td>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                    Manage
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/brand/3/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/brand/3">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>Sumsang Brand</td>
+                                            <td>Sumsang Brand Description</td>
+                                            <td>
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="80" alt="logo">
+
+                                            </td>
+                                            <td>
+                                                3
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                    Manage
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/brand/4/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/brand/4">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--/.main-content -->
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-center text-md-left">Copyright © 2021 <a href="https://softghor.com/" target="__blank">SOFTGHOR</a>. All development rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- END Footer -->
+    </main>
+    <!-- END Main container -->
+    <!-- Scripts -->
+    <script src="https://pos.softghor.com/js/app.js"></script>
+    <script src="https://pos.softghor.com/dashboard/js/core.min.js"></script>
+    <script src="https://pos.softghor.com/dashboard/js/app.js"></script>
+    <script src="https://pos.softghor.com/dashboard/js/script.min.js"></script>
+    <script src="https://pos.softghor.com/dashboard/js/select2.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(".select2").select2();
+    </script>
+
+
+
+    <div class="modal fade show" id="confirm-modal" tabindex="-1" aria-modal="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">You want to delete ?</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                         <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form id="delete-form" action="" method="POST">
+                    <input type="hidden" name="_token" value="hKiLGPcsYtZkcAdxJ3MI195WmbCf9WdZCvohvpL0"> <input type="hidden" name="_method" value="DELETE">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No. Back !</button>
+                        <button type="submit" class="btn btn-primary">Yes, Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.delete').click(function(event) {
+            event.preventDefault();
+            var url = $(this).attr("href");
+
+            $("#delete-form").attr('action', url);
+            $("#confirm-modal").modal('show');
+        });
+    </script>
+</body>
+
+</html>

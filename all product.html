@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="hKiLGPcsYtZkcAdxJ3MI195WmbCf9WdZCvohvpL0">
+
+    <title>SOFTGHOR Digital POS Software | Product List</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="icon css/all.min.css">
+     <link rel="stylesheet" href="icon css/fontawesome.min.css">
+    <link href="https://pos.softghor.com/dashboard/css/core.min.css" rel="stylesheet">
+    <link href="https://pos.softghor.com/dashboard/css/select2.min.css" rel="stylesheet">
+    <link href="https://pos.softghor.com/dashboard/css/app.min.css" rel="stylesheet">
+    <link href="https://pos.softghor.com/dashboard/css/style.min.css" rel="stylesheet">
+    <link href="https://pos.softghor.com/dashboard/css/toastr.css" rel="stylesheet">
+    <link href="https://pos.softghor.com/dashboard/css/custom.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://pos.softghor.com/dashboard/images/logo-light-lg.png">
+    <link rel="icon" href="https://pos.softghor.com/dashboard/images/logo-light-lg.png">
+
+
+
+
+    <style>
+        .table>p {
+            font-size: 19px;
+            padding-top: 5px;
+            letter-spacing: 4px;
+            margin-bottom: 0px;
+        }
+
+        .p_img {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 5px;
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body * {
+                visibility: visible;
+            }
+            @page {
+                size: 'A4'
+            }
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-dots">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+    </div>
+
+
+    <!-- Sidebar -->
+    <!-- Sidebar -->
+    <aside class="sidebar sidebar-expand-lg sidebar-dark">
+        <header class="sidebar-header bg-dark">
+            
+            <span class="logo">
+      <a href="index.html">
+        <h3 class="text-white">Princebros</h3>
+      </a>
+    </span>
+            <span class="sidebar-toggle-fold"></span>
+        </header>
+
+        <nav class="sidebar-navigation">
+
+
+
+            <ul class="menu">
+                <li class="menu-item active">
+                    <a class="menu-link" href="index.html">
+                    <span><i class="fas fa-house-user"></i></span>
+                    <span class="title">Dashboard</span>
+                </a>
+                </li>
+
+                <li class="menu-category">Sale & Purchase</li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="create.html">
+                        <span><i class="fas fa-cart-plus"></i></span>
+                        <span class="title"> POS</span>
+                    </a>
+                </li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="pos.html">
+                        <span><i class="fas fa-shopping-bag"></i></span>
+                        <span class="title"> Sales</span>
+                    </a>
+                </li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="return.html">
+                        <span><i class="fas fa-backward"></i></span>
+                        <span class="title"> Returns</span>
+                    </a>
+                </li>
+
+
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-suitcase"></i></span>
+                        <span class="title">Purchase</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="purchase create.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Purchase</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item">
+                            <a class="menu-link" href="won purchase.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Purchases</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="stock.html">
+                        <span><i class="fas fa-university"></i></span>
+                        <span class="title"> Stock</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-folder"></i></span>
+                        <span class="title">Damages</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add damage.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Damage</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="damage list.html">
+                                <span class="dot"></span>
+                                <span class="title">Damages</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="menu-category">Product Information</li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-swatchbook"></i></span>
+                        <span class="title">Products</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add product.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Product</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="all product.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Products</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-folder"></i></span>
+                        <span class="title">Cateogries</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add category.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Cateogry</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="categories.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Cateogries</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-folder"></i></span>
+                        <span class="title">Brands</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add brand.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Brand</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="brands.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Brands</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="menu-category">Expenses & Payment</li>
+
+
+                <li class="menu-item">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-folder"></i></span>
+                        <span class="title">Expenses</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add expense.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Expense</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="expense.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Expenses</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="expense-category.html">
+                                <span class="dot"></span>
+                                <span class="title">Expense Category</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-file-invoice-dollar"></i></span>
+                        <span class="title">Payments</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add payment.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Payment</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item ">
+                            <a class="menu-link" href="payment.html">
+                                <span class="dot"></span>
+                                <span class="title">Payments</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+
+                <li class="menu-category">Peoples</li>
+
+
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-folder"></i></span>
+                        <span class="title">Customers</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="add customer.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Customer</span>
+                            </a>
+                        </li>
+                        <li class="menu-item ">
+                            <a class="menu-link" href="customer.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Customers</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-wheelchair"></i></span>
+                        <span class="title">Suppliers</span>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </a>
+
+                    <ul class="menu-submenu">
+                        <li class="menu-item">
+                            <a class="menu-link " href="add supplier.html">
+                                <span class="dot"></span>
+                                <span class="title">Add Supplier</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item">
+                            <a class="menu-link " href="supplier.html">
+                                <span class="dot"></span>
+                                <span class="title">Manage Suppliers</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="menu-category">Reports</li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="today_report.html">
+                        <span><i class="far fa-clock"></i></span>
+                        <span class="title"> Today Report</span>
+                    </a>
+                </li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="current_month_report.html">
+                        <span><i class="fas fa-calendar-alt"></i></span>
+                        <span class="title"> Current Month Report</span>
+                    </a>
+                </li>
+                <li class="menu-item ">
+                    <a class="menu-link" href="summery-report.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title"> Summary Report</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="daily_report.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title"> Daily Report</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="customer_due.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title">Due Customer Report</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="low_stock.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title">Low Stock Report</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="most_purchase.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title">Top Customer</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="purchase_report.html">
+                        <span><i class="fas fa-file-pdf"></i></span>
+                        <span class="title">Purchase Report</span>
+                    </a>
+                </li>
+
+
+
+
+
+
+
+                <li class="menu-category">Setting & Customize</li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="pos-setting.html">
+                        <span><i class="fas fa-user-cog"></i></span>
+                        <span class="title"> Settings</span>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a class="menu-link" href="#">
+                        <span><i class="fas fa-cloud"></i></span>
+                        <span class="title"> Backup</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </aside>
+    <!-- END Sidebar -->
+    <!-- END Sidebar -->
+
+
+    <!-- Topbar -->
+    <!-- Topbar -->
+    <header class="topbar topbar-inverse gb-dark" id="topbar-colors">
+        <div class="topbar-left">
+            <span class="topbar-btn sidebar-toggler" style="color:white;"><i>☰</i></span>
+
+
+
+
+
+            <div class="dropdown d-none d-md-block">
+                <h3 style="color:white;text-align:center; font-weight:bold; display:inline-block;">SOFTGHOR Digital POS Software</h3>
+                <p style="color:white; margin-left:15px; font-size:1.2em;display:inline-block; display:inline-block;">For Support: 01786-878393 (10 AM - 06 PM)</p>
+
+            </div>
+
+
+            <di class="topbar-divider d-none d-md-block"></di>
+        </div>
+
+        <div class="topbar-right">
+            <a class="topbar-btn" href="#" data-toggle="test"><i class="ti-align-right"></i></a>
+
+            <div class="topbar-divider"></div>
+
+            <ul class="topbar-btns">
+                <li class="dropdown">
+                    <span class="topbar-btn" data-toggle="dropdown"><img class="avatar"
+            src="https://pos.softghor.com/dashboard/img/avatar/1.jpg" alt="avater"></span>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="https://pos.softghor.com/back/profile"><i class="ti-user"></i> Profile</a>
+
+                        <a class="dropdown-item" href="https://pos.softghor.com/back/pos-setting"><i class="ti-settings"></i> Settings</a>
+                        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+              class="ti-power-off"></i> Logout</a>
+
+                        <form method="POST" id="logout-form" style="display:none" action="https://pos.softghor.com/logout">
+                            <input type="hidden" name="_token" value="hKiLGPcsYtZkcAdxJ3MI195WmbCf9WdZCvohvpL0"> </form>
+                    </div>
+                </li>
+
+                <!-- Notifications -->
+
+                <!-- END Notifications -->
+
+                <!-- Messages -->
+
+                <!-- END Messages -->
+
+            </ul>
+
+            <div class="topbar-divider"></div>
+        </div>
+    </header>
+    <!-- END Topbar -->
+    <!-- END Topbar -->
+
+
+    <!-- Main container -->
+    <main class="main-container" id="app">
+        <header class="header bg-ui-general">
+            <div class="header-info">
+                <h1 class="header-title">
+                    <strong>Products</strong>
+                </h1>
+            </div>
+
+            <div class="header-action">
+                <nav class="nav">
+                    <a class="nav-link active" href="https://pos.softghor.com/back/product">
+        Products
+      </a>
+
+                    <a class="nav-link" href="https://pos.softghor.com/back/product/create">
+        <i class="fa fa-plus"></i>
+        Add Product
+      </a>
+                </nav>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-body mb-2">
+                        <form action="https://pos.softghor.com/back/product">
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <input type="text" name="code" class="form-control" placeholder="Product Code">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="text" class="form-control" name="name" placeholder="Product Name">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <div class="form-group">
+                                        <select name="category" id="" class="form-control">
+                        <option value="">Select Category</option>
+                                                    <option value="1" >Electronics</option>
+                                                    <option value="2" >House</option>
+                                                    <option value="3" >Fashion</option>
+                                                    <option value="4" >Hardware</option>
+                                                    <option value="5" >Document</option>
+                                                    <option value="6" >Honey</option>
+                                                    <option value="7" >CELENDER</option>
+                                                    <option value="8" >shari</option>
+                                                </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row mt-2">
+                                <div class="form-group float-right">
+                                    <button class="btn btn-primary" type="submit">
+                            <i class="fa fa-sliders"></i>
+                            Filter
+                    </button>
+                                    <a href="https://pos.softghor.com/back/product" class="btn btn-info">Reset</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="card">
+                        <h4 class="card-title"><strong>Products</strong></h4>
+
+                        <div class="card-body">
+                            <div class="">
+                                <table class="table table-responsive table-bordered" data-provide="">
+                                    <thead>
+                                        <tr class="bg-primary">
+                                            <th class="text-center">#</th>
+                                            <th class="text-center">Image</th>
+                                            <th>Code</th>
+                                            <th>Name</th>
+                                            <th>Category</th>
+                                            <th>Brand</th>
+                                            <th>Price</th>
+                                            <th>Cost</th>
+                                            <th class="text-center">#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/products/1635863583.jpg" width="40" alt="Image">
+                                            </td>
+                                            <td>114477 </td>
+                                            <td style="max-width:120px;">test 1</td>
+                                            <td>
+                                                shari
+                                            </td>
+                                            <td>
+                                                Brand 1
+                                            </td>
+                                            <td>
+                                                750.00 Tk
+                                            </td>
+                                            <td>
+                                                700.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(14)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/14/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/14">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/14">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="114477">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_14"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_14" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAg5JREFUeJzt3UGSojAUBuBUzQE4klfjqDkGiykzdjdICAmgNYsGv38j4SUfunsVEUNqJobv/HkcDo/X28/Z++Owa675G3g8Ho/H4/F4B7wsB7x7WKWre/2qmofH4/F4PB7vzF7WMt2zFWmVRjW+5FX6Px6Px+PxeDzeO15Y7q/1P6d4PB6Px+PxPs5L9epbXvGGeDwej8fj8XiHvCKFN6V+tazK4/F4PB6Pd0qvkbgGsmE9PB6Px+PxeLxdr8iet51x2hAW93O9Hx6Px+PxeLzf56U5MdQaqkbiTCy2x17y+vn2Lh6Px+PxeDzewhvzvX+VTxkPtxu+yveXNx6Px+PxeLxreUWGcVVaff1YXPzpDcvLdZtemIdFlcfj8Xg8Hu+03ldi05uqqdlf5V7IpmS5pdYDTyuTeTwej8fj8U7rpTkxrPavCi/t71+1vfo74PF4PB6Px/ssb72ikoW3nWJFX30calgPeTwej8fj8c7jpWZi05syel0+/E9eLD4Rj8fj8Xg83jW97cmTt3GHfVbNvGE9fIbH4/F4PB7vpF43l++7XiXj5L3/2ym8frP/4/F4PB6Px7um95Vh1xtz4P8MG79+jMvhk+fxeDwej8e7ljeemrx1tVj7Qv8Xjgx5PB6Px+PxLuhNyfhKfxULr0jDK6q1IY/H4/F4PN4JvUYqXjrUX/F4PB6Px+N9svcPMVXEu/3trV0AAAAASUVORK5CYII="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>00000014 </td>
+                                            <td style="max-width:120px;">NORMAL CELENDER</td>
+                                            <td>
+                                                CELENDER
+                                            </td>
+                                            <td>
+                                                SHAMIM QUIRING CENTER
+                                            </td>
+                                            <td>
+                                                1.00 Tk
+                                            </td>
+                                            <td>
+                                                0.50 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(13)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/13/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/13">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/13">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="00000014">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_13"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_13" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAg1JREFUeJzt3EFy4jAQBVBVzQFyJK7mo/oYLFJRwpQcJLllO8xiYnh/A8LSc7PrkgUpDzOn77yV4dfLRxnGeU88Ho/H4/F4vC2vAo57H2mVAAiGXXg8Ho/H4/HO7FUt03ZD1V1dMj/kTavqeTwej8fj8V7LW1/9odeFx+PxeDwe7+W8vAqPx+PxeDwe7794XQYruqtdeDwej8fj8c7qDRJ4edWMdTngdQ0aj8fj8Xg8Hm/b204Ou8PHw+PxeDwej/f7vNIYXb/eXnJzIr5k8PQwGE773o94Ho/H4/F4vCfx/txnB95GyuS/QOeNy92fzOPxeDwej3dKb5DYG+e99ubUHOCqvBSXm1ftII/H4/F4PN75vGrx2BvvX0Ve/YSyfH5NTd7iu1VrLzwej8fj8Xgn94IVc+vFGfVXi9cVVOVWwdTuh02r6nk8Ho/H4/GezcttR9Z5Vb697VReSbAZd41W8ng8Ho/H453Fy8PMdy/Yv5rbtfOj3t7mGY/H4/F4PN6LeiV7/396aHjLhcfj8Xg8Hu/k3qCD6oD7pOVq/XvE494SHo/H4/F4vJfzctvN5TbTv3opPB+WeDwej8fj8Z7au2XpoKbhefl8zEttRzb2ys15PB6Px+Pxns3Lm+n42usy9pbJVblV9VHHyOPxeDwej/frvUFiL+ft9m3XO9YOzss34/F4PB6PxzuZ9wnHq+/HmN6zSwAAAABJRU5ErkJggg=="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>10001 </td>
+                                            <td style="max-width:120px;">Honey (Sorisa)</td>
+                                            <td>
+                                                Honey
+                                            </td>
+                                            <td>
+                                                No Brand
+                                            </td>
+                                            <td>
+                                                1400.00 Tk
+                                            </td>
+                                            <td>
+                                                1000.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(12)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/12/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/12">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/12">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="10001">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_12"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_12" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAiNJREFUeJzt3UuSgjAUBdBU9QJYEltjqSzDgdVpLUFCSID+DDp67kTxJcc4e5VQEmI1Ywjh9vJ5e+mWT7PLLNfA4/F4PB6Px/tz7z4kSzd5yeU9Q7E6h8fj8Xg8Hq9lr9BBjY8haTIvqYzf8i63tz2Px+PxeDwer1L9mRfCanuMx+PxeDwe7+28vlr9nvc5re3uDY+3PB6Px+PxeG/lZTnZX2WZZ9zyUfey8Hg8Ho/H47XqVTKGvf6qnBNeoR3k8Xg8Ho/He0tvypF3Ov3i/Ul4PB6Px+Px/okX1xken9bPB++5bOdOgzf9Go/H4/F4PB7v6e1nrHhhvaAk/YP/KHLp4NJxJo/H4/F4PF4zXtycKKY59LLqdcdLZlyW5WZJqzwej8fj8Xite/VkXleuxmz/KsZng5YMmQ8sy15a5fF4PB6Px2vSi0f91f797XveGPZukE+q2XJXlzwej8fj8Xgv52VJq0NhP2w/GTYtaP7ysHjTYB6Px+PxeLz2vFjNuPVitb866SXpF2++HI5/EY/H4/F4PF77XnYHe+rFTbu12jJL0m29+nJ5PB6Px+PxXsGrHDBmXjzK0fN2wmbHq5B8P4zH4/F4PB7vhbxkRl/G1jnhFTbUuqJ1pv/j8Xg8Ho/Ha9QrVH/tFfhpuavweDwej8fjvbqXZvKSuUfPn95WC3/XxePxeDwej9e6V8mxFze92c+9sK4+l8vj8Xg8Ho/XmPcFyQv4LREIm44AAAAASUVORK5CYII="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>000011 </td>
+                                            <td style="max-width:120px;">Gaming Laptop</td>
+                                            <td>
+                                                Electronics
+                                            </td>
+                                            <td>
+                                                Sumsang Brand
+                                            </td>
+                                            <td>
+                                                150000.00 Tk
+                                            </td>
+                                            <td>
+                                                12.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(11)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/11/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/11">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/11">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="000011">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_11"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_11" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAhdJREFUeJzt3U2OozAQBlBLc4AcKVfjqBwji1E8URrahbEDiTRSQ79vE4rCj7ArQX5S7mZMz/x5bN4er9evvffH5qW75m/i8Xg8Ho/H4+3wQnZ497TKpe0Nq24Mj8fj8Xg83pG9MDLdw4q8Sqc7vuU15j8ej8fj8Xg83ideWt5fG7528Xg8Ho/H4/06L7e7H3nVG+LxeDwej8fj7fKqVN6c9tlCl8fj8Xg8Hu+QXifjGghlOzwej8fj8Xi8Ta/Klvc602G3tPg81+fh8Xg8Ho/H+3leLhlTa6DqZCzE4vbYW95QPt7F4/F4PB6Px3tm9WsQ+YMR8bL05umQx+PxeDwe76hezLBcMe29TVBePX6ssnreuMtLXZ7H4/F4PB7v8F44JOSN+SrkWry5HMqEF/Jq/uPxeDwej8c7mpebA1UjY+rNV7OXq997CKcMqYBGOYfH4/F4PB7v3F47VXfH9wfjiqE5QIbuVng8Ho/H4/F+npe7GbteLuX/8sZwRTwej8fj8Xjn9V4fPHvxHllanjJ0r2XxbV1+h8fj8Xg8Hu+gXpigqieK+zIdvPV/O9Wq4eX8x+PxeDwej/ebvSlbXirAVKZlN3pPnsfj8Xg8Hu9cXtk7l1W3WrtzXrtN7yQvb8atSx6Px+PxeLyTermUnflqrLwqnRVVt1XyeDwej8fjHdDrpOFtljv/f7q6GB6Px+PxeLwTef8Art/hT93CmiAAAAAASUVORK5CYII="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>000010 </td>
+                                            <td style="max-width:120px;">Dril Machine</td>
+                                            <td>
+                                                House
+                                            </td>
+                                            <td>
+                                                Sumsang Brand
+                                            </td>
+                                            <td>
+                                                3000.00 Tk
+                                            </td>
+                                            <td>
+                                                12.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(10)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/10/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/10">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/10">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="000010">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_10"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_10" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAfJJREFUeJzt3VFugkAUBdBJugCXxNZYKsvwoym1CdThDYND9UPouT/6AnOifzcDShqrGVJKt5evdM80XqprPhOPx+PxeDwer8G7lOOGl3+CKSvAUB4N4fF4PB6Pxzuyl1WmSqFaH+cMbV75CXg8Ho/H4/F4L/Sm8Hg8Ho/H4/0fbyzyXL/i8Xg8Ho/H4/3RCwkrrre3XemF8Hg8Ho/H4x3VqyTzsoQyFtLghYLG4/F4PB6Px9v2tjMu22EY94fH4/F4PB7v/bxQqG752OxXITPfzf1ql5cd5fF4PB6PxzupV475hlX/2AvJTgljV3p9XF2Gx+PxeDwe7wjezynXJVC/n2s7n9GbEgpf8Oo8j8fj8Xg83vG87JR0B8ax2M5qytr996G+5ekf9z8ej8fj8Xi8A3vd+Ldk9W1xfZDH4/F4PB6P93Qafz9Y+cOIKdtHeTwej8fj8d7cq3elYXl0WAWK7bFtL7Vc3eTxeDwej8c7sVeOK3e/Ry9cv0zLFV/lOCcbOx6Px+PxeLyDez8rpqwA9THkuecjpmX/4/F4PB6PxzunF3a8NsZXer9fhsfj8Xg8Hu9c3rgzDc+LznfQplyrI4/H4/F4PN4JvV1pfP70nP5RHWy4Hsrj8Xg8Ho/3fl4lK97D7HheNI/H4/F4PN45vW9Dc2PrBittJAAAAABJRU5ErkJggg=="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>000009 </td>
+                                            <td style="max-width:120px;">Blajer For Men</td>
+                                            <td>
+                                                Document
+                                            </td>
+                                            <td>
+                                                Microsoft Brand
+                                            </td>
+                                            <td>
+                                                3000.00 Tk
+                                            </td>
+                                            <td>
+                                                2500.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(9)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/9/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/9">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/9">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="000009">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_9"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_9" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAiZJREFUeJzt3U1u6jAUBlBLLKBLytay1CyDQUVKH04x9nUg1Rs04XwT4p+cmpllX9Q0dzOlfzldH8/Xz+HWe7k+fnTf+Uw8Ho/H4/F4vDUvP27zLqnJR+yNj6NVeDwej8fj8fbsFVumS9+LR+d7c4OXV8Dj8Xg8Ho/3tt7QHd3gpcfztfHWxePxeDwej/c+Xu76b/ur3FzC4/F4PB6P987eEI72vCqveVV4PB6Px+Px9up1UnjB7ivOBi/meTwej8fj8Y7vVXnmrSf2fh8ej8fj8Xi8v+flaefUVGzFWTnOGp97460+7DvTfQ08Ho/H4/F4B/b6ib0yeS0/FfYVn5vBhWXRDKrzeTwej8fj8fbltcCSqfWq0XTfzeV81l67gjL9yTwej8fj8Xh794JMKXVG17y2r3yjgsZ2yTkDj8fj8Xg83o696gxqydR6c1g+/8RbOVDre/nL8Hg8Ho/H4x3Nm5uUBVwdbyUVNt5HhtZ7ITwej8fj8Xh/z5u7mUKvLOBqJ2+4b5xuf78qCDs9TubxeDwej8c7sFfkyf4q2BMW52vBbWTlncs3eTwej8fj8XbqVVd+614/z/7fTgp/ERlM5vF4PB6Pxzuol7v6XpXfeUVOPB6Px+PxeG/l5dElc5MN+78MVF7V5PF4PB6Pxzual7sKb8l096LzsCodLzUFYaU3Bmvm8Xg8Ho/H24PXybR19DUv2M0tqSbXfTwej8fj8Xh78L4AzzAIfev1+TIAAAAASUVORK5CYII="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>000008 </td>
+                                            <td style="max-width:120px;">Door Export</td>
+                                            <td>
+                                                Hardware
+                                            </td>
+                                            <td>
+                                                Sony Brand
+                                            </td>
+                                            <td>
+                                                15000.00 Tk
+                                            </td>
+                                            <td>
+                                                12.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(8)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/8/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/8">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/8">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="000008">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_8"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_8" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAf9JREFUeJzt3EFu6jAQBmBLHIAjcbUcNcdggcgDNSiTiU1C9RZN+P4NGrv+POxGadoyNNOXRR6r98fHuXnmVng8Ho/H4/F4G7zzWG7z7stGzqtevXsej8fj8Xi83XphZKqcaOxOq6+Sx+PxeDwej/feW939vVcveTwej8fj8Y7vpRP/xbuWn/B4PB6Px+N9s3dp7ta8lNeJR07B6xa7MTwej8fj8Xh79RrpS6nspmEsZYPXeL7G4/F4PB6Px6t7IiIiIt+ecTC6TiunMC910/JlXtbP8ng8Ho/H4/HC4X5ejrkHLwCX+U+NZ2+xoX555aqXnpbxeDwej8fj7dpL6ZteSMt7XdnN200JwDA0Xxfj8Xg8Ho/HO4gXEga0mIaXcloCPB6Px+PxeAf2wong/Ta3ipeuXOdD9zwej8fj8XhH81atlLW/H0y3DdOvH+tfZi08Ho/H4/F4f88bmumbu4kPw9gH/+/hmW56+sbj8Xg8Ho/3NV5MN3/bK9328t6MdIlPu6Hk8Xg8Ho/H27sX1u5175lu83zV8FIH3dv5L6/xeDwej8fjHcPb9rr7Z96zocsSSe3yeDwej8fjfZ03JuxufH5V5t61WfJ4PB6Px+MdzVvuVlLzUrZ53Xya68p0gsfj8Xg8Hm9PXiObvVB+4IWyxIbSsMjj8Xg8Ho+3M+8fNchMjbbY7HQAAAAASUVORK5CYII="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>000007 </td>
+                                            <td style="max-width:120px;">Air Condition</td>
+                                            <td>
+                                                Document
+                                            </td>
+                                            <td>
+                                                Apple Brand
+                                            </td>
+                                            <td>
+                                                96000.00 Tk
+                                            </td>
+                                            <td>
+                                                12.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(7)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/7/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/7">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/7">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="000007">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_7"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_7" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAhNJREFUeJzt3EFu4yAYBlCkOUCONFfzUX2MLEZhGtVuMPw4tMqidt63iTD4lew+YacpdzOnlD4+bumRZXjp3vMv8Xg8Ho/H4/EGvEs73PHKHSxZgWpY8VV4PB6Px+PxjuwVlSm4ozP7uLoOB717/vJ4PB6Px+O9sffqftXpfzwej8fj8Xhv4f3Jm7zEu6bX9T8ej8fj8Xi8I3o5nt3xqgTeHM6W4fF4PB6Pxzuq18mcogZVlbEqA15V0Hg8Ho/H4/F4+95+ctgOfx4ej8fj8Xi83+ctxeiaek8Uy0I1fd4zcB7W8dID4PF4PB6Px3tXr3r/qkpVxprzq9wUvsDrlzsej8fj8Xi8Q3vVknumZ96acS+YXYfT9u0xHo/H4/F4vEN6eSRBoaoSecu1ALgum9r36iU8Ho/H4/F4B/Z+mq/+V5yRlZlGnzfyeDwej8fjndT7bgZ/Pxj8tflzQfXfu3g8Ho/H4/GO5+Vu5q0XzKamzT3zitx3MIVfYtP/eDwej8fj8U7nlY1segBz36teuK/uWL14lsfj8Xg8Hu8sXnHt+QFYbmfHvVtqtht4y5DH4/F4PB7v5F7u5nvemtZpuiOPx+PxeDzeKb1LCxW5pu37XDvekksX4PF4PB6Pxzu5l8MMeFUqr7hjXXwfTtunmzwej8fj8XhH9TqJvWBYZMALzteq7a5dbyqW8Hg8Ho/H4x3F+w/xf3DqdqUcyQAAAABJRU5ErkJggg=="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>000006 </td>
+                                            <td style="max-width:120px;">Freez</td>
+                                            <td>
+                                                House
+                                            </td>
+                                            <td>
+                                                Apple Brand
+                                            </td>
+                                            <td>
+                                                4500.00 Tk
+                                            </td>
+                                            <td>
+                                                12.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(6)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/6/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/6">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/6">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="000006">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_6"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_6" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAghJREFUeJzt3UtOwzAUBVBLLKBL6tay1CyDQVVTQUz8bdKKAWnPnVDn2Sdm9pS4EOIwc/jOx+3j5+3n+efq9fbxNFxzCTwej8fj8Xi8HV6WHd41NDn1vamp5uHxeDwej8c7spe1TNdsRWwyqM4PeZ3+j8fj8Xg8Ho/3jBfK52vTzyUej8fj8Xi8t/Niv/qUV22Ix+PxeDwej7fLq1J5Kf27ZVUej8fj8Xi8Q3qDzC2QDfvh8Xg8Ho/H4216Vba8+1mmfYbiPNfz4fF4PB6Px/t/Xlwzh15DNci8EsXjsYe8aT3exePxeDwej8f7TuevQRT3iE2Hl87fdyZn1TOPx+PxeDzeUb24JvMyfl91yaVe0d/uYPdtlcfj8Xg8Hu/QXpVlSjV8oL/KkjV8z/d/PB6Px+PxeAf2UqbyhWDc1V+llu5cAjHd8l47mLIMeTwej8fj8V7Ny4Bd2fH9wdybmoav88vweDwej8fjHcuLw8xttQX+2guheNzG4/F4PB6P9+Le/cnJy498hfKWy+zU8I2Hgcfj8Xg8Hu/gXvYG8P4Jq0GWyVv/b6daNW293eTxeDwej8d7W2/JlhfKHYyHvzyPx+PxeDzea3nr1TSsqtXaB/q1DEhphzwej8fj8Xjv4XX6q7nyqpz6G6qqvSGPx+PxeDzeAb1BMm/cUPX6Kx6Px+PxeLx39r4A5B2iW2eoagQAAAAASUVORK5CYII="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>000005 </td>
+                                            <td style="max-width:120px;">Ladis Shirt</td>
+                                            <td>
+                                                Electronics
+                                            </td>
+                                            <td>
+                                                Sony Brand
+                                            </td>
+                                            <td>
+                                                900.00 Tk
+                                            </td>
+                                            <td>
+                                                12.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(5)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/5/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/5">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/5">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="000005">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_5"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_5" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAf5JREFUeJzt3EFugzAQBVBLOUCOxNU4ao7BogpNVCLM2CZQdVHI+5vKHvvh7kYOSRqbuaUij9n748+1uecr8Xg8Ho/H4/E2eNdpuM27lwe5vvXqp+fxeDwej8c7rJe1TJUdjeo8+xryeDwej8fj8da9t9Xfe/Uhj8fj8Xg83vm9sONPvCH9hMfj8Xg8Hu+Tva5ZrXkhrx2PXDKvL6p5eDwej8fj8Y7qNXJLqVINzVjIBq9xv8bj8Xg8Ho/Hq3siIiIin56pMRrmmUvWL/XzdLcc1vfyeDwej8fj8da9rNo1h8/c0vLzxuAN5dPqXrgt4/F4PB6PxzuLN85L1lN44UDBK/n888b+Z0V8XYzH4/F4PB7vUN44pw6sZJuXZ6qE/o/H4/F4PB7vpF5lSWmEhNfdi/fleTwej8fj8Xj7vJB33x+clg3z8L5cEC7j3oXH4/F4PB7v/3ljM7dmdSj3Tot3/p5WX7w91no/jMfj8Xg8Hu/UXlat3YeFli4tH5mfIFSzIY/H4/F4PN7RvWzuXvee6Tf3Vw0vnKBf7f/iHI/H4/F4PN75vHb2ec90JRKOy+PxeDwej3deb72/Guan7by/KgEej8fj8Xi8k3tltZKaFxK8tDzQK/3c/3Xj9F1GHo/H4/F4vAN6jWz2suEOL5V8v/xnEo/H4/F4PN4BvW/ixx+bK8A3TAAAAABJRU5ErkJggg=="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>000004 </td>
+                                            <td style="max-width:120px;">T Shirt</td>
+                                            <td>
+                                                Electronics
+                                            </td>
+                                            <td>
+                                                Nokia Brand
+                                            </td>
+                                            <td>
+                                                1500.00 Tk
+                                            </td>
+                                            <td>
+                                                12.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(4)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/4/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/4">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/4">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="000004">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_4"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_4" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgtJREFUeJzt3EFygyAUBmBmcoAeyatxVI/RRSd2bEyCCGiaLqp+/w6efIHdG8kYhmr68MjHc/Y6H2b5Cjwej8fj8Xi8lrec3eBdwyIfS28aXpNqFh6Px+PxeLw9e4WOLPPa1X6bl2yXx+PxeDwe75TesMifeJ/TPnk8Ho/H4/F47/d/Fx6Px+PxeLwze9PU6HXVasnLkqy4V0cvzqtZeDwej8fj8fbqVZJ4he6rnBe8Ms/j8Xg8Ho93fK/C17zVpO/X/iI8Ho/H4/F4/8xb9kiFDmr0uuHnfdilOdzgZe/XeDwej8fj8U7nNTJ5yfCRwpVk17T65loej8fj8Xi8/XjD/EYxeWQ98Tde4/6Sx+PxeDwe72BeBqyn5JU3lORStrLD8Hg8Ho/H4+3Zy1Zk7VvFGxOf1ZoXFz9Z+H7EmI7H4/F4PB7vFN40+5rXyKqXHYbH4/F4PB5vf95QTT/3umclGWa3kRu/9/AZZg1atl0ej8fj8Xi843v3JF53m8n+rLX2/dPyMJS9mOyZx+PxeDweb29e0iNlLVi2otFfbffuG4rN/i+f4/F4PB6Pxzuel2SqpsO3vTDfLo/H4/F4PN6pvDHxHa/wcAzL8Hg8Ho/H4x3OGzN2UN2wSJxfF8bEy7Lu9bcHeTwej8fj8Y7gVdI3q8Pw6K+S4QtePz/MY0PPwwQej8fj8Xi8HXrfB0NxjLzUO4AAAAAASUVORK5CYII="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>000003 </td>
+                                            <td style="max-width:120px;">Desktop Computer</td>
+                                            <td>
+                                                Electronics
+                                            </td>
+                                            <td>
+                                                Sony Brand
+                                            </td>
+                                            <td>
+                                                458.00 Tk
+                                            </td>
+                                            <td>
+                                                12.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(3)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/3/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/3">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/3">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="000003">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_3"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_3" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgdJREFUeJzt3F1u6jAQBlBLXQBLYmtZapbRhyt8RRvAjH9IRR+a5Hxv40lO/DiyESl3M6d7To/Vy3MZ8i/xeDwej8fj8UZevbrCu6Qqp9pbykvRDeHxeDwej8fbsteYyII37s7rvGK7PB6Px+PxeIf0cpVf8T6XffJ4PB6Px+Px3p//Png8Ho/H4/GO7C1LV+/c7ba8kOKNW/fqTc/dEB6Px+PxeLytep0UXmP6aucHXpvn8Xg8Ho/H27/X4Xvey5Tna78RHo/H4/F4vD/m1TNSY4K6euf8dR72MSxXeOF8jcfj8Xg8Hu9w3iCLV5RfKb8RNtTPnO6J15k8Ho/H4/F4m/KWdvBWz1ctL2yoc2EZSh6Px+PxeLzDeIO88NrlNcU0d8v8eIjH4/F4PB5vD15nIhtnanjhG7XX+FpKxYUlj8fj8Xg83rG92++votdJAYSy8D7XWTwej8fj8Xh/08vdzN1u53gs/+j/HnK9oVxNczwej8fj8XjH8c7fK+Gw69X/n6buxNjwpmLPPB6Px+PxeFvz+heCZabhfPWWF96dU73G4/F4PB6Ptz+vSOiu927T4bn2Uvv+ksfj8Xg8Hm9/3ik3M73jNfgp1eHxeDwej8fbnTfI9HxdOBVeyGtv/n6Qx+PxeDwebw/e4I1+N+f7fFWUK7zG/JfKDT26icfj8Xg8Hm+D3n+L3U6wf1FajgAAAABJRU5ErkJggg=="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>000002 </td>
+                                            <td style="max-width:120px;">laptop Comouter</td>
+                                            <td>
+                                                House
+                                            </td>
+                                            <td>
+                                                Sumsang Brand
+                                            </td>
+                                            <td>
+                                                78000.00 Tk
+                                            </td>
+                                            <td>
+                                                12.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(2)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/2/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/2">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/2">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="000002">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_2"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_2" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAh9JREFUeJzt3EFy4jAQBVBVcYAcyVfzUX0MFqloYJBjWZYsk8liDO9vQLT16GWXRBFiM1MI4fbydXv5WD4tlkU+A4/H4/F4PB7v1737I0U+kpct7xmr1Tk8Ho/H4/F4Z/YqE9T0eCRP4WWV6Snvens78Hg8Ho/H4/Ea1Z95IayOx3g8Ho/H4/Hezhua1ee8r9Tb3Rsfb3k8Ho/H4/HeyitycL4qMu+45dL2ivB4PB6Px+Od1WtkCnvzVT0HvMo4yOPxeDwej/eWXkrPO5xh8X4lPB6Px+PxeP+JF9cZH5+27wfvuW73poc38xqPx+PxeDwe7/uCse1VqrlXjHSXrIOwtFvxsur3ksfj8Xg8Hu+EXozVESylcSE4LV8+L2M2r2XezgXjGMpc1nt5PB6Px+PxTu0NW6BI8opqtnd1fpV583JcOhiqXvFw4PF4PB6PxzujF+NqRtpPb5rLvJTiiGvekS1XDe2fr/F4PB6Px+O9jpdSDFSb+8H9dBvi8Xg8Ho/HO70Xm5kWrz9fpfS8sDSUeUW785LH4/F4PB7v7by4mb4O/P9pZdnw/rbL4/F4PB6Pd1KvckJV8WIvn8e8OXXkulR5PB6Px+PxXs3bVvfzpDc+GmnwY6h2wOPxeDwej/dC3nb5c6/d7io8Ho/H4/F4r+7lSV62t/f7q8ILvb+T4PF4PB6Pxzul10jfy6r/7IWlGvJ2eTwej8fj8U7m/QHtKA48l9jxTwAAAABJRU5ErkJggg=="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td style="padding:5px" class="text-center">
+                                                <img src="https://pos.softghor.com/dashboard/images/not-available.png" width="40" alt="Image">
+                                            </td>
+                                            <td>000001 </td>
+                                            <td style="max-width:120px;">Mobile Phone</td>
+                                            <td>
+                                                Fashion
+                                            </td>
+                                            <td>
+                                                Sony Brand
+                                            </td>
+                                            <td>
+                                                4500.00 Tk
+                                            </td>
+                                            <td>
+                                                12.00 Tk
+                                            </td>
+
+                                            <td class="text-center">
+                                                <button class="btn btn-brown btn-sm" onclick="productView(1)">
+                  <i class="fa fa-eye"></i>
+                </button>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-cogs"></i>
+                  </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start">
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/1/edit">
+                      <i class="fa fa-edit"></i>
+                      Edit
+                    </a>
+
+                                                        <a class="dropdown-item" href="https://pos.softghor.com/back/product/sell_history/1">
+                      <i class="fa fa-history"></i>
+                      Sell History
+                    </a>
+
+                                                        <a class="dropdown-item delete" href="https://pos.softghor.com/back/product/1">
+                      <i class="fa fa-trash"></i>
+                      Delete
+                    </a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-light btn-sm generated_barcode" data-value="000001">
+                  <i class="fa fa-barcode"></i>
+                </button>
+
+                                                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#qr_code_1"><i
+                    class="fa fa-qrcode"></i></button>
+                                                <div class="modal fade" id="qr_code_1" role="modal" aria-modal="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <div class="text-center p-4" id="qrcode">
+                                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAghJREFUeJzt2ktuwjAUBVBLLIAlsbUsNcvooMJt1VBe/GuoGDTh3AlyHB88vHKccjdzSunz55ruWYbn7pr3xOPxeDwej8fb4J3r4cCLO1hyA4phwRfh8Xg8Ho/H27MXKlNjRWf2/vQ23Oh95cLj8Xg8Ho/3wt6z+1Wn//F4PB6Px+O9hHfKqzzFe0vP6388Ho/H4/F4e/Rye3bgFWl4c3M2hsfj8Xg8Hm+vXidzajWooowV2eAVBY3H4/F4PB6PN/bGyc12+PfweDwej8fj/T9vKUZvqfdFMRaq6XvNhvOwjpfuAI/H4/F4PN6xvX7GB1ZFGVvd51qedbYb0i93PB6Px+PxeLv0bgneOMEr1q7635LignxjQ2kZTuvbYzwej8fj8Xh794pX2l4n0Wv8ZWNDKY3a3Bxe4fF4PB6Px9uzV2c8W6TqV7k6UOPxeDwej8fjje5fVd44wZvTqv/N3y+ceDwej8fj8fbu5W7mtdeYfdwLueSf+/dFwr/xeDwej8fjHdCLnx+nOzD3vWuqcq699iyPx+PxeDzeUbzwbNsBWDH7bG8Z8ng8Ho/H4x3cy9085t36X+1U3ZHH4/F4PB7vsN6lxurZ3/pVyKUJ8Hg8Ho/H4x3cy81s8Ir0vWvY7rT+usnj8Xg8Ho+3V6+Ttpfz6Dhrgzc+Hotdb0rdHfB4PB6Px+P9W+8D6YPbTgTdsx0AAAAASUVORK5CYII="
+                                                                        alt="QR CODE" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="print_qrcode()" class="btn btn-primary">
+                          <i class="fa fa-print"></i>
+                          Print
+                        </button>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="modal fade" id="product_details" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="product_title">Product Title</h4>
+                                <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">×</span>
+        </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="p-3">
+                                            <img src="#" id="image" width="120" class="p_img" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div>
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Code</td>
+                                                        <td id="code"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Product Type</td>
+                                                        <td id="ptype"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Category</td>
+                                                        <td id="category"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Brand</td>
+                                                        <td id="brand"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Price</td>
+                                                        <td id="price"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cost</td>
+                                                        <td id="cost"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tax</td>
+                                                        <td id="tax"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Stock</td>
+                                                        <td id="stock"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Details</td>
+                                                        <td id="details"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bold btn-pure btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="bar_code_modal" role="modal" aria-modal="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body" id="barcode-page">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" onclick="print_barcode()" class="btn btn-primary">
+          <i class="fa fa-print"></i>
+          Print
+        </button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--/.main-content -->
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-center text-md-left">Copyright © 2021 <a href="https://softghor.com/" target="__blank">SOFTGHOR</a>. All development rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- END Footer -->
+    </main>
+    <!-- END Main container -->
+    <!-- Scripts -->
+    <script src="https://pos.softghor.com/js/app.js"></script>
+    <script src="https://pos.softghor.com/dashboard/js/core.min.js"></script>
+    <script src="https://pos.softghor.com/dashboard/js/app.js"></script>
+    <script src="https://pos.softghor.com/dashboard/js/script.min.js"></script>
+    <script src="https://pos.softghor.com/dashboard/js/select2.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(".select2").select2();
+    </script>
+
+
+
+    <script>
+        // Product View Handle
+        function productView(productId) {
+            let url = "https://pos.softghor.com/back/back/product/id".replace('id', productId);
+            $.get(url, (data) => {
+                $("#product_title").text(data.name);
+                $("#code").text(data.code);
+                $("#ptype").text(data.type);
+                $("#category").text(data.category_name);
+                $("#brand").text(data.brand_name);
+                $("#price").text(data.price);
+                $("#cost").text(data.cost);
+                $("#tax").text(data.tax);
+                $("#stock").text(data.stock);
+                $("#details").html(data.details);
+
+                $("#image").attr('src', "https://pos.softghor.com/link".replace('link', data.image));
+            });
+            $("#product_details").modal('show');
+        }
+
+        // barcode Generated
+        $(document).on('click', '.generated_barcode', function() {
+            let code = $(this).attr('data-value');
+            let url = "https://pos.softghor.com/back/product-barcode/value".replace('value', code);
+
+            $.get(url, (data) => {
+                let company = "Softghor.Com";
+
+                let barcode = '';
+                barcode += `
+          <div class="text-center p-4" id="barcode">
+              <table class="table table-bordered">`;
+                for ($i = 0; $i < 10; $i++) {
+                    barcode += `<tr>`;
+                    for ($j = 0; $j < 3; $j++) {
+                        barcode += `
+                     <td>
+                    ${data}
+                    <p style="margin-bottom:0px">${code}</p>
+                    <strong>${company}</strong>
+                    </td>
+                     `;
+                    }
+                    barcode += `</tr>`;
+                }
+                barcode += `
+                </table>
+              </div>
+              `;
+                $("#barcode-page").html(barcode);
+            });
+
+            $("#bar_code_modal").modal('show');
+        });
+
+
+
+        //  Print Barcode
+        function print_barcode(id) {
+            $("#bar_code_modal").modal('hide');
+            $(".modal-backdrop").remove();
+            $(".modal").css('display', 'none');
+
+            let mainDocBody = $('body').html();
+            let printDoc = $("#barcode-page").html();
+            $("body").html(printDoc);
+            window.print();
+            $("body").html(mainDocBody);
+        }
+
+        // Print QR Code
+        function print_qrcode(doc) {
+
+        }
+    </script>
+
+    <div class="modal fade show" id="confirm-modal" tabindex="-1" aria-modal="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">You want to delete ?</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                         <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form id="delete-form" action="" method="POST">
+                    <input type="hidden" name="_token" value="hKiLGPcsYtZkcAdxJ3MI195WmbCf9WdZCvohvpL0"> <input type="hidden" name="_method" value="DELETE">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No. Back !</button>
+                        <button type="submit" class="btn btn-primary">Yes, Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.delete').click(function(event) {
+            event.preventDefault();
+            var url = $(this).attr("href");
+
+            $("#delete-form").attr('action', url);
+            $("#confirm-modal").modal('show');
+        });
+    </script>
+</body>
+
+</html>
